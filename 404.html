@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #000000;
+}
+.error-container {
+text-align: center;
+margin-top: 200px;
+}
+h1 {
+font-size: 80px;
+color:white;
+}
+
+h2 {
+font-size: 40px;
+color:white;
+margin-bottom: 20px;
+}
+p {
+font-size: 18px;
+color: #777;
+margin-bottom: 40px;
+}
+.error-box {
+width: 400px;
+height: 400px;
+background-color: #000000;
+border-radius: 50%;
+margin:auto;
+position: relative;
+overflow: hidden;
+}
+.error-box:before,
+.error-box:after {
+content: "";
+position: absolute;
+width: 200px;
+height: 200px;
+background-color: #fff;
+border-radius: 50%;
+}
+.error-box:before {
+top: 95px;
+left: -70px;
+}
+.error-box:after {
+top: 95px;
+right: -70px;
+}
+</style>
+<title>404 Error</title>
+</head>
+<body>
+<div class="error-container">
+<h1>Oops!</h1>
+<h2>An error occurred: invalid input.</h2>
+<p><a href="/" style="color: red;">Back to the form</a></p>
+<div class="error-box"></div>
+</div>
+</body>
+</html>
